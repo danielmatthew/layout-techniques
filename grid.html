@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grid Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+
+    <style>
+      .container {
+        height: 100vh;
+        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+        display: grid;
+
+        grid-gap: 20px;
+
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        /* grid-template-columns: repeat(5, 1fr 2fr); */
+        /* grid-template-rows: 1fr 100px 1fr; */
+        /* grid-template-rows: repeat(10, 50px); */
+
+      }
+
+      .container > * {
+        padding: 1em;
+      }
+
+      header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+      }
+
+      main {
+        grid-column-start: 2;
+        grid-column-end:  4;
+        grid-column: 2 / 4
+      }
+
+      footer {
+        grid-row: span 4;
+        grid-column: span 2
+      }
+
+      .container {
+          grid-template-areas:
+            "header header header "
+            "main main aside"
+            "footer footer footer"
+        }
+      }
+    </style>
+
+    <div class="container">
+        <header>
+          My header
+        </header>
+        <main>
+          Lorem
+        </main>
+        <footer>
+          My footer
+        </footer>
+      </div>
+
+</body>
+</html>

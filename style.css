@@ -1,0 +1,229 @@
+/* #region Config */
+html {
+  background-color: #303239;
+  color: #d5d8e3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #000;
+}
+
+
+#demo {
+  padding: 1em;
+}
+
+.eighties {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nineties {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.noughties {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.noughties .wrapper > * {
+  border: 5px solid black;
+}
+
+.flexed {
+  font-family: "Open Sans", sans-serif;
+}
+
+.gridded {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.timeline {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 1em;
+}
+
+.timeline > button {
+  flex: 1 1 100%;
+  line-height: 5em;
+  border: 0;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.timeline > button:hover,
+.timeline > button:focus {
+  background-color: #ddd;
+}
+
+.timeline > button:active {
+  background-color: #ccc;
+}
+
+.container > * {
+  border: 5px solid black;
+}
+
+header {
+  background-color: red;
+}
+
+nav {
+  background-color: yellow;
+}
+
+aside {
+  background-color: orangered;
+}
+
+main {
+  background-color: blue;
+}
+
+footer {
+  background-color: green;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear:both;
+}
+
+
+/* #endregion */
+
+/* #region Tables */
+
+.tables {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.tables td {
+  border: 5px solid black;
+}
+
+/* #endregion */
+
+/* #region Floats */
+.nineties img {
+  float: right;
+}
+
+.noughties .col {
+    float: left;
+    width: 33.33333%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+.nineties main:before,
+.nineties main:after {
+  content: "";
+  display: table;
+}
+
+.nineties main:after {
+  clear:both;
+}
+
+.nineties footer {
+  clear: left;
+}
+
+/* #endregion */
+
+/* #region Flexbox */
+html {
+  direction: rtl;
+}
+
+.flexed .container {
+  display: flex;
+
+  flex-direction: column;
+  /* flex-direction: row; */
+}
+
+.flexed .wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.flexed main {
+  flex: 1;
+}
+
+.flexed main {
+  justify-items: center;
+}
+
+.flexed #demo nav,
+.flexed aside {
+  flex: 0 0 12em;
+}
+
+.flexed #demo nav {
+  order: 1;
+}
+/* #endregion */
+
+/* #region Grid */
+.gridded .container {
+  display: grid;
+
+  grid-gap: 10px;
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+
+  grid-template-areas:
+  "header header side"
+  "nav nav side"
+  "footer footer side";
+}
+
+.gridded header {
+  grid-area: header;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gridded #demo nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
+}
+
+.gridded main {
+  grid-area: header;
+}
+
+.gridded aside {
+  grid-area: side;
+  margin-right: 0.5rem;
+}
+
+.gridded footer {
+  grid-area: footer;
+}
+
+/* #endregion */

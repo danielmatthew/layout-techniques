@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Flex Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+      flex-direction: row;
+
+
+      justify-content: space-evenly;
+      /* /* justify-items: flex-start; */
+
+      /* align-content: flex-start; */
+      align-items: center; */ */
+    }
+
+    .container > * {
+      padding: 1em;
+    }
+
+    .container > header {
+      align-self: flex-start;
+    }
+
+    .container > main {
+      flex: 1;
+    }
+
+    .container > footer {
+      flex-grow: 1
+      order: -1;
+    }
+
+  </style>
+  <div class="container">
+    <header>
+      My header
+    </header>
+    <main>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium ratione ipsa reprehenderit voluptatibus voluptatem quis odio, sequi tempora aspernatur sapiente rerum id deleniti eos ea. Ea incidunt aliquam laborum?
+    </main>
+    <footer>
+      My footer
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <!-- #region Config -->
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="timeline">
+    <button onclick="loadIntro()">1989</button>
+    <button onclick="loadTables()">1998</button>
+    <button onclick="loadFloats()">2003</button>
+    <button onclick="loadFloatedGrid()">2012</button>
+    <button onclick="loadFlexbox()">2015</button>
+    <button onclick="loadCSSGrid()">2017</button>
+  </nav>
+
+  <div id="demo"></div>
+  <!-- #endregion -->
+
+  <!-- #region Intro-->
+  <template id="intro">
+    <div class="container">
+      <header>
+        <h1>My Awesome Website</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="">My life</a></li>
+          <li><a href="">My work</a></li>
+          <li><a href="">My nan</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Welcome to my blog!</h2>
+        <img src="https://placehold.it/200">
+        <span>Some inline text</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non ut iure blanditiis sequi aperiam iusto
+          repudiandae, exercitationem vel id sapiente sint, adipisci reprehenderit, culpa cum temporibus error quae
+          odio.</p>
+      </main>
+      <aside>Some additional content</aside>
+      <footer>
+        Copyright 1989
+      </footer>
+
+    </div>
+  </template>
+  <!-- #endregion -->
+
+  <!-- #region Floats -->
+  <template id="floats">
+    <div class="container">
+      <header>
+        <h1>My awesome website</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="">My life</a></li>
+          <li><a href="">My work</a></li>
+          <li><a href="">My nan</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>Welcome to my blog!</h2>
+        <img src="https://placehold.it/200">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non ut iure blanditiis sequi aperiam iusto
+          repudiandae, exercitationem vel id sapiente sint, adipisci reprehenderit, culpa cum temporibus error quae
+          odio.</p>
+      </main>
+      <aside>Some additional content</aside>
+      <footer>Copyright 1998</footer>
+    </div>
+
+  </template>
+  <!-- #endregion -->
+
+  <!-- #region Table -->
+  <template id="table">
+    <table>
+      <thead>
+        <tr>
+          <td colspan="4">
+            <header>
+              <h1>My awesome website</h1>
+
+            </header>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="1">
+            <nav>
+              <ul>
+                <li><a href="">My life</a></li>
+                <li><a href="">My work</a></li>
+                <li><a href="">My nan</a></li>
+              </ul>
+            </nav>
+          </td>
+          <td colspan="2">
+            <main>
+              <h2>Welcome to my blog!</h2>
+              <img src="http://placehold.it/200" alt="">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minima deserunt facere debitis exercitationem ducimus blanditiis cupiditate beatae dolore mollitia ratione quo deleniti voluptatem at, eaque nesciunt possimus voluptas necessitatibus?
+              </p>
+            </main>
+          </td>
+          <td colspan="1">
+            <aside>
+              <p>Some additional content</p>
+            </aside>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <footer>
+              Copyright 1998
+            </footer>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </template>
+  <!-- #endregion -->
+
+  <!-- #region Floated Grid -->
+  <template id="grid">
+    <div class="container">
+      <header>
+        <h1>My awesome website!</h1>
+      </header>
+      <div class="wrapper">
+        <nav class="col">
+          <ul>
+            <li><a href="">My life</a></li>
+            <li><a href="">My work</a></li>
+            <li><a href="">My nan</a></li>
+          </ul>
+        </nav>
+        <main class="col">
+          <h2>Welcome to my blog!</h2>
+          <img src="https://placehold.it/200">
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo non ut iure blanditiis sequi aperiam iusto
+            repudiandae, exercitationem vel id sapiente sint, adipisci reprehenderit, culpa cum temporibus error quae
+            odio.</p>
+
+        </main>
+        <aside class="col">
+          <p>Some additional content</p>
+        </aside>
+      </div>
+      <footer class="clearfix">
+        Copyright 2012
+      </footer>
+    </div>
+  </template>
+  <!-- #endregion -->
+
+  <!-- #region Holy Grail Floats -->
+  <!-- #endregion -->
+
+  <!-- #region Holy Grail Flex -->
+  <template id="holy-grail-flex">
+    <div class="container">
+      <header>
+        <h1>My awesome website!</h1>
+      </header>
+      <div class="wrapper">
+        <main>
+          <h2>Welcome to my blog!</h2>
+          <img src="https://placehold.it/200" alt="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus itaque magnam nam sint, dicta debitis quis eligendi officiis, fugiat molestias neque accusantium, dolore tenetur minima? Soluta, culpa. Quisquam, rem amet.
+          </p>
+        </main>
+        <nav>
+          <ul>
+            <li><a href="">My life</a></li>
+            <li><a href="">My work</a></li>
+            <li><a href="">My nan</a></li>
+          </ul>
+        </nav>
+        <aside>Some additional content</aside>
+      </div>
+      <footer>Copyright 2015</footer>
+    </div>
+  </template>
+
+  <!-- #endregion -->
+
+  <!-- #region Holy Grail Grid -->
+  <template id="holy-grail-grid">
+    <div class="container">
+      <header>
+        <h1>My awesome website!</h1>
+      </header>
+      <main>
+        <h2>Welcome to my blog!</h2>
+        <img src="https://placehold.it/200">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quia quisquam rem vero perferendis
+          architecto doloremque magni totam modi. Consectetur, voluptatum. Odio cum explicabo voluptate voluptatum
+          libero rerum quia ullam.
+        </p>
+      </main>
+      <nav>
+        <ul>
+          <li><a href="">My life</a></li>
+          <li><a href="">My work</a></li>
+          <li><a href="">My nan</a></li>
+        </ul>
+      </nav>
+      <aside>Some additional content</aside>
+      <footer>Copyright 2018</footer>
+    </div>
+  </template>
+  <!-- #endregion -->
+
+  <script src="main.js"></script>
+</body>
+
+</html>
